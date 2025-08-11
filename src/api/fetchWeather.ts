@@ -5,7 +5,8 @@ export async function fetchWeatherForPolygons(
   polygons: PolygonData[],
   start_hour: string,
   end_hour: string,
-  field: string
+  field: string,
+  setError: (error: string) => void,
 ) {
   const result: Record<string, object | null> = {};
 
@@ -19,6 +20,7 @@ export async function fetchWeatherForPolygons(
       const data = await res.json();
       result[poly.id] = data;
     } catch (error) {
+      setError(JSON.stringify(error, null, 2) || "Failed to fetch weather");
       console.error(`Failed to fetch weather for polygon ${poly.id}`, error);
       result[poly.id] = null;
     }

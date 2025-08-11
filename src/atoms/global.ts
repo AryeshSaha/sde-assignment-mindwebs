@@ -30,3 +30,6 @@ export const polygonsAtom = atom<PolygonData[]>([]);
 
 
 export const fetchedDataAtom = atom<Record<string, any>>({});
+
+export const loadingAtom = atom<boolean>(false);
+export const errorAtom = atom<string | null>(null);

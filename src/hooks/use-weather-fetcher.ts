@@ -1,8 +1,10 @@
 import { fetchWeatherForPolygons } from "@/api/fetchWeather";
 import {
   dualTimelineAtom,
+  errorAtom,
   fetchedDataAtom,
   isSingleModeAtom,
+  loadingAtom,
   polygonsAtom,
   singleTimelineAtom,
   thresholdAtom,
@@ -22,8 +24,12 @@ export function useWeatherFetcher() {
   const [isSingle] = useAtom(isSingleModeAtom);
   const [, setFetchedData] = useAtom(fetchedDataAtom);
 
+  const [, setLoading] = useAtom(loadingAtom);
+  const [, setError] = useAtom(errorAtom);
+
   useEffect(() => {
     if (polygons.length === 0) return;
+    setLoading(true);
     let startTime: string, endTime: string;
     if (isSingle) {
       startTime = indexToDateTime(0);
@@ -37,9 +43,11 @@ export function useWeatherFetcher() {
         polygons,
         startTime,
         endTime,
-        thresholdState.field
+        thresholdState.field,
+        setError
       );
       setFetchedData(data);
+      setLoading(false);
     }
 
     fetchData();
@@ -50,5 +58,7 @@ export function useWeatherFetcher() {
     isSingle,
     thresholdState.field,
     setFetchedData,
+    setError,
+    setLoading,
   ]);
 }

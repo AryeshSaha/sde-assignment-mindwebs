@@ -52,7 +52,7 @@ export function getColorFromRules(
       case ">=":
         if (value >= rule.value) return rule.color;
         break;
-      case "==":
+      case "=":
         if (value === rule.value) return rule.color;
         break;
       case "!=":

@@ -13,7 +13,7 @@ const Timeline = () => {
 
   return (
     <>
-      <div className="container mx-auto flex justify-start items-center gap-3">
+      <div className="container mx-auto max-w-5xl flex justify-end items-center gap-2 mt-8">
         <Label
           htmlFor="point-switch"
           className={

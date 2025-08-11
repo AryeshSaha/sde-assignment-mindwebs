@@ -21,6 +21,7 @@ export function usePolygonStyling() {
         color,
         fillColor: color,
         fillOpacity: 0.5,
+        weight: 1,
       });
     });
   }, [polygons, thresholdState, fetchedData]);
