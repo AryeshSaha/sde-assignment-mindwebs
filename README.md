@@ -1,6 +1,10 @@
 # 🚀 Project Setup & Documentation
 
-![Next.js](https://img.shields.io/badge/Next.js-15.Script](https://img.shields.io/badge/TypeScript-5+-bluewindCSS](https://img.shields.io/badge/TailwindCSS-3+-06B](https://img.shields.io/b 📑 Table of Contents
+![Next.js](https://img.shields.io/badge/Next.js-v15.4+-black?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9+-3178c6?logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1+-06B6D4?logo=tailwindcss)
+
+📑 Table of Contents
 1. [Setup & Run Instructions](#setup--run-instructions)  
 2. [Libraries Used](#-libraries-used)  
    - [State Management (Jotai)](#1-state-management-jotai)  
