@@ -78,14 +78,3 @@ Next.js is a React framework that enables server-side rendering, static site gen
 | Tailwind CSS          | https://tailwindcss.com/docs             | https://www.npmjs.com/package/tailwindcss      |
 | @uiw/react-color      | https://uiwjs.github.io/react-color/     | https://www.npmjs.com/package/@uiw/react-color |
 | Next.js               | https://nextjs.org/docs                  | https://www.npmjs.com/package/next             |
-
-[1] https://www.jsdelivr.com/package/npm/@uiw/react-color-editable-input-rgba
-[2] https://news.ycombinator.com/item?id=38623695
-[3] https://www.npmjs.com/package/@uiw/react-color
-[4] https://www.jsdelivr.com/package/npm/@uiw/react-color-sketch
-[5] https://www.npmjs.com/package/@uiw/react-color-wheel
-[6] https://www.npmjs.com/package/@uiw/react-color-circle
-[7] https://github.com/uiwjs/react-color/releases
-[8] https://browsertotal.com/analysis/live/store/npmjs/%2540uiw%252Freact-color
-[9] https://www.npmjs.com/package/@uiw/react-json-view
-[10] https://browsertotal.com/analysis/live/store/npmjs/@uiw/react-color-swatch
